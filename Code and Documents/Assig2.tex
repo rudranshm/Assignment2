@@ -1,0 +1,94 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\title{Assignment 2 \\ \Large AI1110: Probability and Random Variables \\ \large Indian Institute of Technology Hyderabad}
+\author{Rudransh Mishra \\ \normalsize AI21BTECH11025 \\ \vspace*{20pt} \normalsize  28 April 2022 \\ \vspace*{20pt} \Large ICSE 2017 Grade 12}
+
+
+\begin{document}
+% The title
+\maketitle
+
+% The question
+\textbf{Question 1(ii)} 
+A problem is given to three students whose chances of solving it are \(\frac{1}{4}\), \(\frac{1}{5}\) and \(\frac{1}{3}\) respectively. Find the probability that the problem is solved.
+
+% The solution
+
+\textbf{Solution.}\\
+\noindent Probability of $1^{st}$ student solving the problem, P1: \(\frac{1}{4}\)\\
+\\
+Probability of $2^{nd}$ student solving the problem, P2: \(\frac{1}{5}\)\\
+\\
+Probability of $3^{rd}$ student solving the problem, P3: \(\frac{1}{3}\)\\
+
+The probability of event E not occuring, $\neg E$ , is given as :
+\begin{align}
+  &\neg E = 1 - E
+\end{align}
+$\therefore$ The probabilty of the problem being solved, P(Solved) will be given by
+\begin {align}
+  &P(Solved) = 1-P(NotSolved) ,
+\end{align}
+Where P(NotSolved) is the probability of no student solving the problem.\\
+
+\noindent Let the probability of individual students not solving the problem be $\neg P1$, $\neg P2$, $\neg P3$ respectively. Question is unsolved if all three students simultaneously do not solve it.\\
+
+\noindent $\therefore$ P(NotSolved) can be give as:
+\begin{align}
+   &P(NotSolved) = \neg P1 \times \neg P2 \times \neg P3 
+\end{align}
+\noindent $\therefore$ By equations (1) and (3),
+\begin{align}
+  &P(NotSolved) = (1 - P1) \times (1 - P2) \times (1 - P3)
+\end{align}
+\noindent Substituting with values for P1,P2,P3,
+\begin{align}
+  $P(NotSolved) = $(1 - \(\frac{1}{4}\)) \times (1 - \(\frac{1}{5}\)) \times (1 - \(\frac{1}{3}\))$
+\end{align}
+\begin{align}
+$= \(\frac{3}{4}\)\times\(\frac{4}{5}\)\times\(\frac{2}{3}\) $ 
+$= \(\frac{2}{5}\) $
+$= 0.4$
+\end{align}
+
+\noindent $\therefore$ By equation (2), 
+\begin {align}
+  &P(Solved) = 1-P(NotSolved)\\
+  &P(Solved) = 1-0.4\\
+  &P(Solved) = 0.6
+\end{align}
+
+Thus, the probabilty of the problem being solved, P(Solved) will be 0.6.\\
+
+\begin{tabular}{ ||p{3.5cm}|p{2cm}||  }
+ \hline
+ \hline
+ \multicolumn{2}{||c||}{\textbf{Input and Output}} \\
+ \hline
+ \hline
+ \textbf{Input}& \textbf{Value} \\
+ \hline
+ &\\
+ P1 &   \(\frac{1}{4}\)\\
+ &\\
+ \hline
+ &\\
+ P2 &   \(\frac{1}{5}\)\\
+ &\\
+ \hline
+ &\\
+ P3 &   \(\frac{1}{3}\)\\
+ &\\
+ \hline
+ \textbf{Output}& \textbf{Value} \\
+ \hline
+ P(solved)&   0.6 \\
+ \hline
+ \hline
+\end{tabular}
+\end{document}
